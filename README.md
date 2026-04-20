@@ -7,7 +7,7 @@
 Night-time light (NTL) radiance captured by the VIIRS satellite sensor serves as a well-established proxy for economic activity, infrastructure density, and urbanisation intensity. This repository presents a zonal-level spatiotemporal analysis of NTL dynamics across Ethiopia, combining VIIRS VCMCFG annual composites (2014–2022) with WorldPop population estimates (2020) to map the spatial distribution of development intensity and its trajectory over eight years.
 
 The analytical framework draws on Henderson, Storeygard & Weil (2012), who demonstrated the robustness of satellite luminosity as an independent measure of economic output, and subsequent applications in sub-Saharan development research (Donaldson & Storeygard, 2016; Falchetta et al., 2019). NTL radiance integrates signals from electricity infrastructure, commercial activity, road lighting, and industrial operations — making it a composite indicator of spatial development rather than a narrow measure of any single infrastructure dimension.
-
+##### scroll down for visualisatins
 ---
 
 ## Repository Structure
