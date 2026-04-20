@@ -6,9 +6,9 @@
 
 ## Overview
 
-This work includes the application of **big data analytics and remote sensing** to development economics, producing sub-national evidence on spatial inequality and economic trajectory that is directly relevant to **country-level reporting frameworks** — including the UN Sustainable Development Goals (SDG 7, SDG 10, SDG 11), World Bank country diagnostics, and UNDP Human Development country reports.
+This work includes the application of **big data analytics and remote sensing** to development economics, producing sub-national evidence on spatial inequality and economic trajectory that is directly relevant to **country-level reporting frameworks** — including the UN Sustainable Development Goals (SDG 7, SDG 10, SDG 11), World Bank country diagnostics and UNDP Human Development country reports.
 
-Traditional country reports on development access rely on household surveys (DHS, MICS) which are expensive, infrequent, and spatially coarse. Satellite-derived night-time luminosity (NTL) offers a scalable, high-frequency, high-resolution alternative that can monitor development dynamics between survey cycles — at a granularity no conventional data collection method can match. Crucially, these methods remain operational even in contexts in **member states where traditional data systems break down—such as conflict-affected regions, fragile states, or disaster-hit areas where field surveys are delayed, incomplete, or unsafe to conduct.** In such settings, satellite data provides a consistent and impartial lens to track changes in human activity, infrastructure disruption, and recovery patterns in near real time.
+Traditional country reports on development access rely on household surveys (DHS, MICS) which may be expensive, infrequent and spatially coarse. Satellite-derived night-time luminosity (NTL) offers a scalable, high-frequency, high-resolution alternative that can monitor development dynamics between survey cycles at a granularity no conventional data collection method can match. Crucially, these methods remain operational even in contexts in **member states where traditional data systems break down—such as conflict-affected regions, fragile states, or disaster-hit areas where field surveys are delayed, incomplete, or unsafe to conduct.** In such settings, satellite data provides a consistent and impartial lens to track changes in human activity, infrastructure disruption, and recovery patterns in near real time.
 
 Ethiopia is an analytically significant case: the country undertook substantial infrastructure expansion between 2014 and 2022, while also experiencing conflict (Tigray, 2020–2022), climate stress (Horn of Africa drought), and administrative restructuring. This combination makes it an ideal setting for evaluating NTL as a responsive and spatially explicit development indicator.
 
@@ -29,7 +29,7 @@ The scale of computation in this analysis:
 | Administrative units analysed | 12 regional states × ~70 zones |
 | Cloud compute platform | Google Earth Engine (serverless, distributed) |
 
-Processing this volume of satellite and population data on a local machine is computationally infeasible. Google Earth Engine's distributed cloud infrastructure handles petabyte-scale geospatial datasets through parallelised server-side computation — a standard big data architecture applied to a development analytics use case.
+Processing this volume of satellite and population data on a local machine is computationally infeasible. Google Earth Engine's distributed cloud infrastructure handles petabyte-scale geospatial datasets through parallelised server-side computation a standard big data architecture applied to a development analytics use case.
 
 ---
 
@@ -41,7 +41,7 @@ Night-time light (NTL) radiance captured by the VIIRS satellite sensor is an est
 
 **1. Current state (2022)** — Spatial development gap at zonal and regional level, measuring the proportion of the inhabited population residing in zones with NTL radiance below the detection threshold. This maps development inequality across ~70 zones and 12 regions.
 
-**2. Temporal trajectory (2014–2022)** — Linear trend slope estimated per pixel via ordinary least squares regression across five annual composites. Slope (nW/cm²/sr per year) represents the sustained direction and magnitude of economic activity change — distinguishing growth corridors from stagnant or declining zones.
+**2. Temporal trajectory (2014–2022)** — Linear trend slope estimated per pixel via ordinary least squares regression across five annual composites. Slope (nW/cm²/sr per year) represents the sustained direction and magnitude of economic activity change distinguishing growth corridors from stagnant or declining zones.
 
 **3. Population-weighted access** — NTL development gap weighted by WorldPop gridded population at 100 m resolution, ensuring that sparsely populated dark zones do not distort national or regional aggregates. This is the metric most directly comparable to country report indicators.
 
@@ -64,7 +64,7 @@ NTL-based analytics are particularly valuable for **countries where administrati
 
 ## Key Findings
 
-- National mean NTL radiance increased from **0.081 nW/cm²/sr (2014)** to **0.289 nW/cm²/sr (2022)** — a **253.5% increase** consistent with documented electrification expansion, industrial park development, and urban growth during this period.
+- National mean NTL radiance increased from **0.081 nW/cm²/sr (2014)** to **0.289 nW/cm²/sr (2022)** a **253.5% increase** consistent with documented electrification expansion, industrial park development, and urban growth during this period.
 - The **spatial development gap** at 0.3 nW/cm²/sr threshold stands at **66%** of the inhabited population in 2022, reflecting persistent rural-urban and inter-regional inequality.
 - **Northeast zones** (Afar, Tigray, north Amhara) show the highest development deficit, while the **Addis Ababa metropolitan corridor** shows the lowest — a spatial gradient consistent with infrastructure investment patterns reported in national development planning documents.
 - **Growth hotspot zones** (linear trend slope > 0.040 nW/cm²/sr per year) are spatially concentrated, indicating that infrastructure investment has not yet produced broad convergence across zones.
