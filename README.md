@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project demonstrates the application of **big data analytics and remote sensing** to development economics, producing sub-national evidence on spatial inequality and economic trajectory that is directly relevant to **country-level reporting frameworks** — including the UN Sustainable Development Goals (SDG 7, SDG 10, SDG 11), World Bank country diagnostics, and UNDP Human Development country reports.
+This project includes the application of **big data analytics and remote sensing** to development economics, producing sub-national evidence on spatial inequality and economic trajectory that is directly relevant to **country-level reporting frameworks** — including the UN Sustainable Development Goals (SDG 7, SDG 10, SDG 11), World Bank country diagnostics, and UNDP Human Development country reports.
 
 Traditional country reports on development access rely on household surveys (DHS, MICS) which are expensive, infrequent, and spatially coarse. Satellite-derived night-time luminosity (NTL) offers a scalable, high-frequency, high-resolution alternative that can monitor development dynamics between survey cycles — at a granularity no conventional data collection method can match.
 
@@ -17,7 +17,7 @@ Ethiopia is an analytically significant case: the country undertook substantial 
 
 ## Big Data Dimensions
 
-The scale of computation in this analysis places it firmly within the **big data domain**:
+The scale of computation in this analysis:
 
 | Dimension | Detail |
 |---|---|
